@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home 1</title>
+    <meta content="Templines" name="author" />
+    <meta content="Atishay" name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="{% static 'css/uikit.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/ion.rangeSlider.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  </head>
+
+  <body class="page-home">
+    {% include 'navbar.html' %}
+
+    <div class="page-wrapper">
+    {% block content %} 
+    
+    {% endblock %}
+
+    {% include 'footer.html' %}
+
+    </div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/uikit.min.js' %}"></script>
+    <script src="{% static 'js/uikit-icons.min.js' %}"></script>
+    <script src="{% static 'js/fontawesome.all.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/ion.rangeSlider.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

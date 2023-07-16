@@ -1,0 +1,36 @@
+{% load static %}
+
+<header class="page-header page-header--2 page-header-transparent">
+    <div class="page-header__inner">
+      <div class="page-header__left">
+        <div class="logo"><a class="logo__link" href={% url 'home' %}>
+            <div class="logo__icon"><img src="{% static '/img/hero-logo.svg' %}" alt="Atishay"></div>
+            <div class="logo__text">ATISHAY AUTOMOBILES</div>
+          </a></div>
+      </div>
+      <div class="page-header__center">
+        <nav class="page-nav" data-uk-navbar>
+          <ul class="uk-navbar-nav">
+            <li><a href={% url 'home' %}>Home</a>
+            </li>
+            <li><a href={% url 'about-us' %}>About Us</a></li>   
+            <li><a href={% url 'shop' %}>Products</a></li>
+            <li><a href={% url 'contact' %}>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__right"><a class="uk-navbar-toggle search-btn" href="#modal-search" data-uk-search-icon data-uk-toggle></a>
+        <div class="page-header__support">
+          <div class="support"><a class="support__link" href="tel:265005369">
+              <div class="support__icon"><img src="{% static '/img/icons/phone.svg' %}" alt="phone"></div>
+              <div class="support__desc">
+                <div class="support__label">Call Us Today!</div>
+                <div class="support__phone">+91 94256 27274</div>
+              </div>
+            </a></div>
+        </div><a class="uk-navbar-toggle cart-btn" href="#!">
+          <div class="cart-btn__icon uk-icon" data-uk-icon="cart"><span class="cart-btn__count">2</span></div>
+        </a><a class="uk-navbar-toggle menu-btn" href="#offcanvas" data-uk-toggle><img src="{% static '/img/icons/menu.svg' %}" alt="menu"></a>
+      </div>
+    </div>
+  </header>

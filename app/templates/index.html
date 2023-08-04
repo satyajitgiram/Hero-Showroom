@@ -2773,28 +2773,7 @@
           data-uk-grid
           data-uk-lightbox
         >
-          {% for img in gallery_images %}
-          <div>
-            <div>
-              <a href="{{img.image.url}}"
-                ><img
-                  class="uk-width-1-1"
-                  src="{{img.image.url}}"
-                  alt="{{img.text}}"
-              /></a>
-            </div>
-          </div>
-          {% endfor %}
-          {% comment %} <div>
-            <div>
-              <a href="{% static 'img/img-gallery-3-big.jpg' %}"
-                ><img
-                  class="uk-width-1-1"
-                  src="{% static 'img/img-gallery-3.jpg' %}"
-                  alt="img-gallery"
-              /></a>
-            </div>
-          </div> {% endcomment %}
+          
         </div>
       </div>
     </div>
